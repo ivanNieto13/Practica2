@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvMarca"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.AddCarActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/app_edit_car_title"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:entries="@array/marcasTipos"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilModelo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/app_car_model"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spMarca"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconDrawable="@drawable/ic_car">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilVersion"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/app_car_version"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilModelo"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconDrawable="@drawable/ic_version">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilAnio"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/app_car_year"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilVersion"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconDrawable="@drawable/ic_anio">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietAnio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="date"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilKm"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/app_car_km"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tilAnio"
+        app:layout_constraintVertical_bias="0.0"
+        app:startIconDrawable="@drawable/ic_km">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLines="1">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="click"
+        android:text="@string/app_car_update"
+        android:textAllCaps="false"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
