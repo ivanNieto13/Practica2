@@ -39,4 +39,6 @@
     <string name="app_year">year</string>
     <string name="app_toast_year_error">Año inválido</string>
     <string name="app_car_id">ID</string>
+    <string name="app_version_splash">1.0.0</string>
+    <string name="app_author">Ivan Nieto</string>
 </resources>
