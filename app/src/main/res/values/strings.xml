@@ -41,4 +41,5 @@
     <string name="app_car_id">ID</string>
     <string name="app_version_splash">1.0.0</string>
     <string name="app_author">Ivan Nieto</string>
+    <string name="app_no_data">¡No hay registros!</string>
 </resources>

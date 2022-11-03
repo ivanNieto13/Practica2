@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
         binding.rvCars.layoutManager = LinearLayoutManager(this)
         binding.rvCars.adapter = carsAdapter
 
-        /*if(listGames.size == 0) binding.tvSinRegistros.visibility = View.VISIBLE
-        else binding.tvSinRegistros.visibility = View.INVISIBLE*/
+        if(listCars.size == 0) binding.tvNoData.visibility = View.VISIBLE
+        else binding.tvNoData.visibility = View.INVISIBLE
     }
 
     fun click(view: View) {
